@@ -28,7 +28,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ghcr.io/plycos/task-track-nuxt
+          images: ghcr.io/${{ github.repository }}
           tags: |
             latest
             sha-${{ github.sha }}
